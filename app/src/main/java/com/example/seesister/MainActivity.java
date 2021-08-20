@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private PictureLoader loader;
     private SisterApi sisterApi;
     private SisterTask sisterTask;
+    private SisterLoader mLoader;
+    mLoader = SisterLoader.getInstance(MainActivity.this);
+    mLoader.bindBitmap(data.get(curPos).getUrl(),showImg,400,400);
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
