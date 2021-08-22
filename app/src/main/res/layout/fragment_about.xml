@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -43,12 +43,12 @@
             app:layout_constraintTop_toBottomOf="@id/tv_app_version" />
 
         <TextView
-            android:id="@+id/tv_about_drysister"
+            android:id="@+id/tv_about_seesister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="16dp"
-            android:text="@string/about_drysister"
+            android:text="关于Seesister"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="14sp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -56,7 +56,7 @@
 
 
         <TextView
-            android:id="@+id/tv_about_drysister_detail"
+            android:id="@+id/tv_about_seesister_detail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="15dp"
@@ -69,7 +69,7 @@
             android:textSize="12sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_about_drysister" />
+            app:layout_constraintTop_toBottomOf="@id/tv_about_seesister"/>
 
         <TextView
             android:id="@+id/tv_about_me"
@@ -81,7 +81,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textSize="14sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_about_drysister_detail" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_about_seesister_detail" />
 
         <TextView
             android:id="@+id/tv_about_me_detail"
@@ -131,4 +131,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</android.support.v4.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>

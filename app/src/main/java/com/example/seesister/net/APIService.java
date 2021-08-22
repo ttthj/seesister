@@ -5,8 +5,10 @@ import com.example.seesister.data.result.GankResult;
 
 
 import io.reactivex.Flowable;
+
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -17,7 +19,7 @@ import retrofit2.http.Path;
 
 public class APIService {
 
-    private static String BASE_URL = "http://www.coderpig.com/";   //未启用
+    private static String BASE_URL = "http://gank.io/";   //未启用
 
     public APIs apis;
 
@@ -33,7 +35,7 @@ public class APIService {
     private APIService() {
         Retrofit storeRestAPI = new Retrofit.Builder().baseUrl(BASE_URL)
                 .client(DryInit.mOkHttpClient)
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         apis = storeRestAPI.create(APIs.class);
