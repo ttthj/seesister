@@ -1,14 +1,18 @@
-package com.example.seesister;
+package com.example.seesister.data.dto;
 
-public class Sister {
+/**
+ * 描述：Gank.io 返回的妹子
+
+ */
+
+public class GankMeizi {
     private String _id;
-    private String createAt;
+    private String createdAt;
     private String desc;
     private String publishedAt;
     private String source;
-    private String type;
     private String url;
-    private boolean used;
+    private Boolean used;
     private String who;
 
     public String get_id() {
@@ -19,12 +23,12 @@ public class Sister {
         this._id = _id;
     }
 
-    public String getCreateAt() {
-        return createAt;
+    public String getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreateAt(String createAt) {
-        this.createAt = createAt;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
     public String getDesc() {
@@ -51,27 +55,11 @@ public class Sister {
         this.source = source;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public boolean isUsed() {
+    public Boolean getUsed() {
         return used;
     }
 
-    public void setUsed(boolean used) {
+    public void setUsed(Boolean used) {
         this.used = used;
     }
 
@@ -81,5 +69,13 @@ public class Sister {
 
     public void setWho(String who) {
         this.who = who;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
